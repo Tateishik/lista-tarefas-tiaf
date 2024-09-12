@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 // Importa os componentes View, Input e IconButton da biblioteca NativeBase
-import { View, Input, IconButton } from 'native-base';
+import { View, Input, IconButton, Text } from 'native-base';
 
 // Importa o ícone "add" da biblioteca Ionicons
 import { Ionicons } from '@expo/vector-icons';
@@ -46,6 +46,7 @@ const AdicionarTarefa: React.FC = () => {
         paddingTop: 50 
       }}
     >
+      <Text fontSize="xl" color="white" mb={4}>Lista de Tarefas Kauã Tateishi</Text>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <View style={{ flex: 1, marginRight: 10 }}>
           {/* Campo de entrada para o usuário digitar o título da nova tarefa */}
